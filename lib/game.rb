@@ -80,4 +80,11 @@ class Game
     end
   end
 
+  def play(board)
+    spots = 0
+    until spots == 9
+      spots += 1
+      turn(board)
+    end
+  end
 end
