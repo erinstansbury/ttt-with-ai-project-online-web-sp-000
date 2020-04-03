@@ -81,10 +81,15 @@ class Game
   end
 
   def play
-    spots = 0
-    until spots == 9
-      spots += 1
-      turn(board)
+    turn until over? == true
+    if won? == true
+      puts "Congrats!"
+    elsif draw? == true
+      puts "Cat's Game!"
+    else
     end
   end
+
+
+  
 end
