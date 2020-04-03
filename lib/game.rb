@@ -63,6 +63,7 @@ class Game
 
   def winner
     if won?
+      winarray = won?
       board.cells[winarray[0]]
     else
       nil
