@@ -63,7 +63,7 @@ class Game
 
   def winner
     if won?
-      @board.cells[position_1[0]]
+      @board.cells[winarray[0]]
     else
       nil
     end
