@@ -5,3 +5,4 @@ module Players
       gets.strip
     end
   end
+end
