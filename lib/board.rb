@@ -47,9 +47,6 @@ class Board
     return counter
   end
 
-
-
-
     def update(input, player)
       input = input.to_i
       cells[input -1] = player.token
