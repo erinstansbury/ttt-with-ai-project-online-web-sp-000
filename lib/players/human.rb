@@ -1,6 +1,7 @@
-class Player::Human < Player
+module Players
+  class Human < Player
     def move(board)
-      puts "choose a number between 1-9"
+      puts "Please enter 1-9:"
       gets.strip
     end
   end
