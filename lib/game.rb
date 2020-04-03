@@ -83,7 +83,7 @@ class Game
   def play
     turn until over? == true
     if won? == true
-      puts "Congrats!"
+      puts "Congratulations #{winner}!"
     elsif draw? == true
       puts "Cat's Game!"
     else
