@@ -62,16 +62,12 @@ class Game
   end
 
   def winner
-    index = []
-    index = won?
-    if index == false
-      return nil
+    if won?
+        combination = won?
+        @board.cells[combination[0]]
     else
-      if cells[index[0]] == "X"
-        return "X"
-      else
-        return "O"
-      end
+      nil
     end
   end
+  
 end
