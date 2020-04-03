@@ -1,10 +1,11 @@
-module Players
-  class Computer < Player
-    def move(board, counter = 0)
-      spot = rand(1..10)
-        if !board.full? && spot.valid_move?
-          update
-        end
-    end
+class Computer < Player
+  def move(board)
+   input = (1 + rand(9)).to_s
+
+   if board.valid_move?(input) == false
+    self.move
+   else
+    return input
+   end
   end
 end
