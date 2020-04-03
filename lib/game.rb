@@ -80,7 +80,7 @@ class Game
     end
   end
 
-  def play(board)
+  def play
     spots = 0
     until spots == 9
       spots += 1
