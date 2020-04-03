@@ -80,7 +80,6 @@ class Game
     else
       turn
     end
-
   end
 
 end
