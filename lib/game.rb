@@ -75,7 +75,6 @@ class Game
     input = current_player.move(board).to_i
     if board.valid_move?(input) == true
       board.update(input, current_player)
-      display_board
     else
       turn
     end
